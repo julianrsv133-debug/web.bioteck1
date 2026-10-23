@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f6ee" />
+    <meta name="description" content="Completa tus datos para pedir el Kit Natural Care Bioteck con pago contraentrega." />
+    <title>Finaliza tu pedido | Bioteck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="checkout.js" defer></script>
+  </head>
+  <body class="checkout-body">
+    <a class="skip-link" href="#contenido">Saltar al formulario</a>
+
+    <header class="site-header checkout-header">
+      <a class="brand" href="index.html" aria-label="Bioteck, volver a la página del kit">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" focusable="false"><path d="M28.7 7.6C17.1 7.1 9.6 12.1 9.6 20.3c0 4.6 3.2 7.9 7.4 7.9 8.2 0 12.3-9.3 11.7-20.6Z" /><path d="M7.3 28.8c4.2-6.2 9.4-10.5 16-13.4" /></svg></span>
+        <span class="brand-name">Bio<span>teck</span></span>
+      </a>
+      <p class="brand-tagline">Hecho con amor de la Tierra para la Tierra</p>
+      <a class="header-cta" href="index.html#oferta">Volver a la oferta <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="contenido" class="checkout-main">
+      <section class="checkout-intro section-shell" aria-labelledby="checkout-title">
+        <p class="eyebrow eyebrow-centered"><span class="eyebrow-line"></span> Tu cambio empieza hoy <span class="eyebrow-line"></span></p>
+        <h1 id="checkout-title">Estás a punto de mejorar tu rutina de cuidado diario y descubrir tu versión más saludable y sostenible</h1>
+        <p class="checkout-summary-title"><em>Esto es todo lo que <strong>obtienes</strong> con tu Kit</em></p>
+      </section>
+
+      <div class="checkout-layout section-shell">
+        <section class="checkout-form-panel" aria-labelledby="delivery-title">
+          <div class="checkout-panel-heading">
+            <div>
+              <h2 id="delivery-title">Diligencia tus datos <strong>completos</strong> para que tu pedido llegue <strong>fácil</strong> y <strong>rápido</strong> 🚐🚀</h2>
+            </div>
+          </div>
+
+          <form id="order-form" data-order-form method="post">
+            <div class="form-grid">
+              <label class="form-field form-field-wide" for="customer-name">
+                <span>Nombre y apellido</span>
+                <input id="customer-name" name="fullName" type="text" autocomplete="name" placeholder="Como aparece en tu documento" required minlength="3" />
+              </label>
+              <label class="form-field form-field-wide" for="customer-address">
+                <span>Dirección completa</span>
+                <input id="customer-address" name="address" type="text" autocomplete="street-address" placeholder="Calle, carrera, número, barrio y apto." required minlength="6" />
+              </label>
+              <label class="form-field" for="customer-department">
+                <span>Departamento</span>
+                <input id="customer-department" name="department" type="text" autocomplete="address-level1" placeholder="Ej. Cundinamarca" required />
+              </label>
+              <label class="form-field" for="customer-city">
+                <span>Ciudad o municipio</span>
+                <input id="customer-city" name="city" type="text" autocomplete="address-level2" placeholder="Ej. Bogotá" required />
+              </label>
+              <label class="form-field" for="customer-phone">
+                <span>Teléfono</span>
+                <input id="customer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ej. +57 300 000 0000" required minlength="7" maxlength="24" />
+              </label>
+              <label class="form-field" for="customer-email">
+                <span>Correo electrónico</span>
+                <input id="customer-email" name="email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required />
+              </label>
+            </div>
+
+            <label class="consent-field" for="privacy-consent">
+              <input id="privacy-consent" name="privacyConsent" type="checkbox" value="true" required />
+              <span>Autorizo el uso de estos datos para registrar mi pedido, confirmar la compra y coordinar la entrega. La política de tratamiento de datos debe publicarse antes de activar el formulario.</span>
+            </label>
+
+            <button class="button button-primary checkout-submit" type="submit" disabled>
+              <span class="checkout-button-label"><em>Envíame mis productos</em></span>
+            </button>
+            <p class="checkout-status" id="checkout-status" role="status" aria-live="polite"></p>
+            <p class="checkout-security-note"><span aria-hidden="true">🔒</span> Tus datos se usarán para gestionar y despachar este pedido.</p>
+          </form>
+        </section>
+
+        <aside class="order-summary" aria-labelledby="summary-title">
+          <h2 id="summary-title">Kit Natural Care</h2>
+          <div class="summary-product">
+            <img src="assets/images/kit-natural-care.webp" alt="" width="1200" height="896" />
+            <div><span>4 productos para tu rutina diaria + 2 productos digitales para cuidar mejor de ti</span></div>
+          </div>
+          <ul class="summary-items">
+            <li><span>Crema dental natural · 60 ml</span><span>1 unidad</span></li>
+            <li><span>Desodorante natural · 60 ml</span><span>1 unidad</span></li>
+            <li><span>Crema hidratante · 30 ml</span><span>1 unidad</span></li>
+            <li><span>Cepillo dental de bambú</span><span>1 unidad</span></li>
+          </ul>
+          <div class="summary-book-covers" aria-label="Portadas de los dos libros digitales incluidos">
+            <img src="assets/images/guia-productos-diarios.webp" alt="Portada: 10 cosas que no sabías de los productos de uso diario" width="896" height="1200" loading="lazy" />
+            <img src="assets/images/guia-inflamacion.webp" alt="Portada: El secreto para reducir la inflamación" width="896" height="1200" loading="lazy" />
+          </div>
+          <div class="summary-bonus">
+            <p><span aria-hidden="true">✦</span> Te obsequiamos por tu compra hoy</p>
+            <ul>
+              <li>Libro digital: 10 cosas que no sabías de los productos de uso diario</li>
+              <li>Libro digital: El secreto para reducir la inflamación</li>
+            </ul>
+          </div>
+          <div class="summary-price">
+            <p>Precio total <del>$119.000</del></p>
+            <div><span>Hoy solo por</span><strong>$77.000 <small>COP</small></strong></div>
+            <p class="summary-includes">Un kit completo + 2 libros digitales de regalo</p>
+          </div>
+          <div class="summary-shipping"><span aria-hidden="true">🚚</span><span><strong>Envío gratis</strong><br />Pago al recibir tu pedido</span></div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer checkout-footer">
+      <a class="brand footer-brand" href="index.html" aria-label="Bioteck, volver al inicio">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" focusable="false"><path d="M28.7 7.6C17.1 7.1 9.6 12.1 9.6 20.3c0 4.6 3.2 7.9 7.4 7.9 8.2 0 12.3-9.3 11.7-20.6Z" /><path d="M7.3 28.8c4.2-6.2 9.4-10.5 16-13.4" /></svg></span>
+        <span class="brand-name">Bio<span>teck</span></span>
+      </a>
+      <p>Hecho con amor de la Tierra para la Tierra.</p>
+    </footer>
+  </body>
+</html>

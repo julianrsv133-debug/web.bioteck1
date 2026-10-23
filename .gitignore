@@ -1,0 +1,10 @@
+# Original customer screenshots and high-resolution source photos stay local.
+# Only the optimized, approved files in assets/images/ belong in the web build.
+assets/images/por-cargar/Imagenes Funnel Web 2.0/
+assets/images/optimized-review.jpg
+
+# Local source/export artifacts; the optimized WebP assets are committed.
+assets/images/Foto cepillo.JPG
+assets/images/~$*
+__pycache__/
+*.py[cod]

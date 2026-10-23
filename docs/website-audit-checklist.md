@@ -1,0 +1,30 @@
+# Checklist de auditoría del sitio Bioteck
+
+Estados: No iniciado · En progreso · Implementado, sin verificar · Verificado · Bloqueado · No aplicable.
+
+| ID | Categoría | Requisito | Prioridad | Estado | Evidencia / problema | Acción pendiente | Aprobación |
+|---|---|---|---|---|---|---|---|
+| OBJ-01 | Objetivos y conversión | Definir la conversión principal del primer embudo | Bloqueante | En progreso | La maqueta apunta a la venta directa del Kit Natural Care | Confirmar el flujo de pedido y pago | Usuario |
+| DIS-01 | Branding y diseño | Usar Georgia en títulos y subtítulos e Inter en interfaz y textos | Alta | Implementado, sin verificar | Tokens y estilos iniciales en `styles.css` | Confirmar visualmente y revisar carga de Inter | Usuario |
+| DIS-02 | Branding y diseño | Mantener tono semicalido, minimalista, natural y premium | Alta | Implementado, sin verificar | Paleta azul/verde, crema y veta de madera en CSS | Contrastar con logo original y referencias visuales | Usuario |
+| DIS-03 | Branding y diseño | Reemplazar marcos por imágenes aprobadas | Alta | En progreso | Fotos de kit, productos, ebooks y dos testimonios integradas | Validar permiso de uso y encuadre en móviles | Usuario |
+| CON-01 | Contenido y conversión | Confirmar precio, oferta, beneficios y CTA | Bloqueante | Implementado, sin verificar | Maqueta con $115.000, $77.000 y +1.500 clientes, según indicación del usuario | Confirmar cifras, garantía, envío y disponibilidad antes de publicar | Usuario |
+| CON-02 | Contenido y conversión | Confirmar y corregir el texto de los tres bloques iniciales | Alta | Implementado, sin verificar | Jerarquía revisada en `index.html` | Revisar y aprobar el texto | Usuario |
+| CON-03 | Contenido y conversión | Presentar los componentes del Kit Natural Care en el orden solicitado | Alta | Implementado, sin verificar | Crema dental, desodorante, crema hidratante, cepillo de bambú y dos libros digitales | Aprobar nombres, descripciones, ingredientes y beneficios con fichas oficiales | Usuario |
+| CON-04 | Contenido y conversión | Validar afirmaciones de uso, salud y composición de los productos | Bloqueante | No iniciado | Texto de referencia pendiente de cotejo con información oficial | Compartir etiquetas o fichas vigentes y revisar el texto antes de publicar | Usuario |
+| CON-05 | Checkout | Mostrar el Kit Natural Care, sus cuatro productos, dos bonos y precio consistente | Bloqueante | Implementado, sin verificar | Resumen de pedido actualizado: precio total $119.000 y oferta de $77.000 COP | Confirmar precio, lista final y condiciones de envío antes de conectar | Usuario |
+| FOR-02 | Formularios e integraciones | Conectar el formulario con el webhook de pedidos de n8n | Bloqueante | Bloqueado por dato faltante | El formulario valida y el JS evita enviar si no hay URL | Proporcionar URL pública del webhook de prueba y contrato JSON esperado; probar en entorno de pruebas | Usuario |
+| SEC-02 | Seguridad y privacidad | Proteger webhook y publicar autorización/política de tratamiento de datos | Bloqueante | No iniciado | El frontend no lleva secretos; aviso advierte que falta política | Definir política y, para producción, proxy/control de abuso en Cloudflare Worker | Usuario |
+| SEC-03 | Privacidad de testimonios | Autorizar y anonimizar los testimonios antes de publicarlos | Bloqueante | En revisión | Se integran conversaciones completas 5b y 5c sin nombres visibles; 5a queda excluido por afirmación de curación | Confirmar autorización de uso y validar las afirmaciones ante la NSO | Usuario |
+| SEC-04 | Derechos de imagen | Confirmar autorización de uso comercial de la foto lifestyle | Alta | No iniciado | La imagen de historia muestra a una persona identificable | Confirmar licencia/autorización antes de publicar | Usuario |
+| DIS-04 | Branding y diseño | Fondo semicalido de veta de madera con contraste suave | Media | Implementado, sin verificar | Textura CSS con capas claras y pasteles propios por sección | Revisar; reemplazar por foto real si se aprueba | Usuario |
+| FOR-01 | Formularios e integraciones | Diseñar y validar el formulario de pedido | Bloqueante | No iniciado | No se incluye en esta entrega | Definir campos, estados y destino de los datos | Usuario |
+| SEC-01 | Seguridad y privacidad | Definir aviso de privacidad y tratamiento de datos | Bloqueante | No iniciado | No se recopilan datos en esta maqueta | Definir flujo y responsable de datos antes de integrar | Usuario |
+| ACC-01 | Accesibilidad | Revisar teclado, contraste, textos alternativos y movimiento reducido | Alta | Implementado, sin verificar | Enlace para saltar al contenido y soporte de `prefers-reduced-motion` | Revisar contraste y recorrer con teclado/lector de pantalla | Pendiente |
+| SEO-01 | SEO | Confirmar metadatos, encabezados y estructura | Media | Implementado, sin verificar | Idioma, título y descripción básicos | Completar metadatos al aprobar contenido y dominio | Pendiente |
+| PER-01 | Rendimiento | Optimizar imágenes y fuentes | Media | No iniciado | No hay imágenes finales; Inter se carga desde Google Fonts | Comprimir imágenes y decidir si Inter se aloja localmente | Pendiente |
+| RSP-01 | Responsive y compatibilidad | Revisar móvil, tablet y escritorio | Alta | Implementado, sin verificar | Reglas responsive en `styles.css` | Verificar en navegador en tamaños reales | Pendiente |
+| PRU-01 | Pruebas | Revisar carga, enlaces, navegación y flujo de pedido | Alta | No iniciado | No ejecutado en esta entrega | Verificar cuando haya navegador local y formulario | Pendiente |
+| GH-01 | GitHub y recuperación | Subir estructura ordenada al repositorio | Alta | No iniciado | Carpeta local aún no conectada a Git | Copiar o abrir el proyecto desde el repo | Usuario |
+| DEP-01 | Despliegue y dominio | Preparar publicación en Cloudflare Pages | Media | No iniciado | No publicado | Configurar después de aprobar la web y el formulario | Usuario |
+| DOC-01 | Documentación | Explicar archivos e imágenes pendientes | Media | Implementado, sin verificar | `README.md` | Actualizar conforme avance la implementación | Pendiente |
